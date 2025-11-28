@@ -75,7 +75,8 @@ run_core() {
     print "Creating free5GC containers, it can take a while..."
 
     if [ ! -d "free5gc-compose" ]; then
-        git clone https://github.com/PORVIR-5G-Project/free5gc-compose.git free5gc-compose
+        # git clone https://github.com/PORVIR-5G-Project/free5gc-compose.git free5gc-compose
+        git clone https://github.com/MinhBang1000/free5gc-compose.git free5gc-compose
         cd free5gc-compose/
         make base
     else
@@ -107,7 +108,8 @@ fill_core_database() {
 }
 
 download_core_tester() {
-    git clone https://github.com/PORVIR-5G-Project/free5gc-my5G-RANTester-docker my5G-RANTester
+    # git clone https://github.com/PORVIR-5G-Project/free5gc-my5G-RANTester-docker my5G-RANTester
+    git clone https://github.com/MinhBang1000/free5gc-my5G-RANTester-docker.git my5G-RANTester
 }
 
 # Parse CLI parameters

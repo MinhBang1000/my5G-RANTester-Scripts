@@ -95,9 +95,11 @@ fi
 if [ "$RUN_CORE_5G" = "1" ]; then
     source <(curl -s https://raw.githubusercontent.com/PORVIR-5G-Project/my5G-RANTester-Scripts/main/utils/5g_core/free5gc_v3.0.6.sh)
 elif [ "$RUN_CORE_5G" = "2" ]; then
-    source <(curl -s https://raw.githubusercontent.com/PORVIR-5G-Project/my5G-RANTester-Scripts/main/utils/5g_core/free5gc_v3.2.1.sh)
+    # source <(curl -s https://raw.githubusercontent.com/PORVIR-5G-Project/my5G-RANTester-Scripts/main/utils/5g_core/free5gc_v3.2.1.sh)
+    source ./utils/5g_core/free5gc_v3.2.1.sh
 elif [ "$RUN_CORE_5G" = "3" ]; then
-    source <(curl -s https://raw.githubusercontent.com/PORVIR-5G-Project/my5G-RANTester-Scripts/main/utils/5g_core/open5gs_v2.3.6.sh)
+    # source <(curl -s https://raw.githubusercontent.com/PORVIR-5G-Project/my5G-RANTester-Scripts/main/utils/5g_core/open5gs_v2.3.6.sh)
+    source ./utils/5g_core/open5gs_v2.3.6.sh
 elif [ "$RUN_CORE_5G" = "4" ]; then
     source <(curl -s https://raw.githubusercontent.com/PORVIR-5G-Project/my5G-RANTester-Scripts/main/utils/5g_core/oai_v1.4.0.sh)
 else
