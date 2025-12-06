@@ -3,7 +3,7 @@
 
 echo "Run connectivity tests"
 for e in $(seq 1 2); do
-    for c in 3; do
+    for c in 2 3; do
         echo "Run core $c tests (exec $e)"
         for w in 500 400 300 200 100; do
             for i in 1 3 5 7 9 11; do
