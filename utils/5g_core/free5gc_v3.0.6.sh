@@ -75,7 +75,8 @@ run_core() {
     print "Creating free5GC containers, it can take a while..."
 
     if [ ! -d "free5gc-compose" ]; then
-        git clone https://github.com/PORVIR-5G-Project/free5gc-docker-v3.0.6 free5gc-compose
+        # git clone https://github.com/free5gc/free5gc-compose.git free5gc-compose
+        git clone https://github.com/MinhBang1000/free5gc-docker-v3.0.6.git free5gc-compose
         cd free5gc-compose/
         make base
     else
@@ -91,7 +92,8 @@ fill_core_database() {
     print "Adding necessary information to free5GC database..."
 
     if [ ! -d "my5G-RANTester-Database-Filler" ]; then
-        git clone --recurse-submodules https://github.com/PORVIR-5G-Project/my5G-RANTester-free5GC-Database-Filler my5G-RANTester-Database-Filler
+        # git clone --recurse-submodules https://github.com/PORVIR-5G-Project/my5G-RANTester-free5GC-Database-Filler my5G-RANTester-Database-Filler
+        git clone --recurse-submodules https://github.com/MinhBang1000/my5G-RANTester-free5GC-Database-Filler.git my5G-RANTester-Database-Filler
     fi
     
     cd my5G-RANTester-Database-Filler/
@@ -107,7 +109,8 @@ fill_core_database() {
 }
 
 download_core_tester() {
-    git clone https://github.com/PORVIR-5G-Project/free5gc-my5G-RANTester-docker my5G-RANTester
+    # git clone https://github.com/PORVIR-5G-Project/free5gc-my5G-RANTester-docker my5G-RANTester
+    git clone https://github.com/MinhBang1000/free5gc-my5G-RANTester-docker.git my5G-RANTester
 }
 
 # Parse CLI parameters
